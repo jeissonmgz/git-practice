@@ -25,4 +25,12 @@ git commit -m "Feature 1 fixed"
 git checkout master
 git merge hotfix
 git tag "v1.1.0"
+git checkout feature2
+git add .
+git commit -m "Adding Feature 2"
+git checkout master
+git merge feature2
+git add .
+git commit -m "Conflict merges resolve bettween feature and master"
+git tag "v1.2.0"
 ```
